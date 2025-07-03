@@ -1,5 +1,6 @@
 import React from "react";
 import NextButton from "../components/common/NextButton";
+import Points from "../components/common/Points";
 // import imsg from "../../../assets/images/Mask-trees";
 export default function Onboarding4() {
   const message= "/onboarding2";
@@ -15,13 +16,9 @@ export default function Onboarding4() {
           and track progress over time.
         </h2>
       </div>
-      <div className="pt-10.5 flex space-x-3 pb-17">
-        <div className="w-3 h-3 rounded-4xl bg-nlgrey"></div>
-        <div className="w-3 h-3 rounded-4xl bg-nlgrey"></div>
-        <div className="w-3 h-3 rounded-4xl bg-nlgrey"></div>
-        <div className="w-3 h-3 rounded-4xl bg-ngreen"></div>
-      </div>
-      <NextButton ref={"/login"} text={"Get Started"}/>
+      
+      <Points length={4} active={4} />
+      <NextButton ref={"/Loginwelcom"} text={"Get Started"}/>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import NextButton from "../components/common/NextButton";
+import Points from "../components/common/Points";
 // import imsg from "../../../assets/images/Mask-trees";
 export default function Onboarding3() {
   return (
@@ -14,12 +15,7 @@ export default function Onboarding3() {
           saving up to 30% water while keeping plants healthy.
         </h2>
       </div>
-      <div className="pt-10.5 flex space-x-3 pb-17">
-        <div className="w-3 h-3 rounded-4xl bg-nlgrey"></div>
-        <div className="w-3 h-3 rounded-4xl bg-nlgrey"></div>
-        <div className="w-3 h-3 rounded-4xl bg-ngreen"></div>
-        <div className="w-3 h-3 rounded-4xl bg-nlgrey"></div>
-      </div>
+      <Points length={4} active={3} />
       <NextButton ref={"/onboarding4"} />
     </>
   );

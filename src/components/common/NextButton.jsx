@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function NextButton({ref, text}) {
+export default function NextButton({ ref, text }) {
   return (
     <>
-      <button className="cursor-pointer px-36 py-5.5 font-medium text-white text-xl bg-ngreen rounded-[51px]">
-        <Link to={ref}>{text ? text : "Next"}</Link>
-      </button>
+      <Link to={ref} className="flex justify-center pb-7">
+        <button className="cursor-pointer w-80 py-5.5 font-medium text-white text-xl bg-ngreen rounded-[51px]">
+          <p className="font-medium text-xl">{text ? text : "Next"}</p>
+        </button>
+      </Link>
     </>
   );
 }
